@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  height: 100vh !important;
+  align-items: center;
+}
+
+.btn-block{
+  width: 100%;
+}
