@@ -4,6 +4,12 @@
   align-items: center;
 }
 
-.btn-block{
+.btn-block {
   width: 100%;
+}
+.card {
+  background: linear-gradient(135deg, #aecaef 0%, #e1d7f2 100%);
+  display: grid;
+  align-items: center;
+  height: 100vh;
 }
