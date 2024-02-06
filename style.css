@@ -5,29 +5,38 @@ body {
   background-image: url(assets/bg-img.jpg);
   background-size: cover;
 }
-.btn-block {
-  width: 100%;
-}
 .card {
-  /* background: linear-gradient(135deg, #aecaef 0%, #e1d7f2 100%); */
   display: grid;
   align-items: center;
   border-radius: 12px;
+  width: 100% !important;
 }
 #card-bg-img {
   border-radius: 12px 0px 0px 12px !important;
+  width: 100%;
+  height: 100% !important;
 }
+#card-bg-img:hover {
+  border-radius: 12px 0px 0px 12px;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+#card-bg-img:not(:hover) {
+  transition: transform 0.3s ease-in-out;
+}
+
 .img-section {
   position: relative;
+  overflow: hidden;
 }
-/* .bg-img{
-  background-size: cover !important;
-} */
 .img-text {
   position: absolute;
   top: 5%;
   left: 10%;
   color: white;
+}
+.btn-block {
+  width: 100%;
 }
 .line {
   position: relative;
@@ -57,12 +66,10 @@ body {
   background-clip: padding-box;
   border: none !important;
   border-bottom: 2px solid black !important;
-  /* border-radius: 0.25rem; */
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .form-control-2:focus {
   outline: 0;
-  border-bottom: 2px solid #007bff; /* Change the color on focus if needed */
 }
 /* Button Styles */
 .btn-2 {
