@@ -6,25 +6,11 @@ body {
   background-size: cover;
 }
 .card {
-  display: grid;
-  align-items: center;
-  border-radius: 12px;
-  width: 100% !important;
+  border-radius: 12px !important;
 }
 #card-bg-img {
   border-radius: 12px 0px 0px 12px !important;
-  width: 100%;
-  height: 100% !important;
 }
-#card-bg-img:hover {
-  border-radius: 12px 0px 0px 12px;
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
-#card-bg-img:not(:hover) {
-  transition: transform 0.3s ease-in-out;
-}
-
 .img-section {
   position: relative;
   overflow: hidden;
@@ -34,9 +20,6 @@ body {
   top: 5%;
   left: 10%;
   color: white;
-}
-.btn-block {
-  width: 100%;
 }
 .line {
   position: relative;
@@ -61,7 +44,7 @@ body {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  color: #495057;
+  color: #000000;
   background-color: #f7f7f7;
   background-clip: padding-box;
   border: none !important;
@@ -71,7 +54,6 @@ body {
 .form-control-2:focus {
   outline: 0;
 }
-/* Button Styles */
 .btn-2 {
   display: inline-block;
   font-weight: 400;
@@ -86,16 +68,16 @@ body {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-/* Dark Button */
 .btn-dark-2 {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;
 }
-
-/* Dark Button Hover State */
 .btn-dark-2:hover {
   color: #fff;
   background-color: #23272b;
   border-color: #1d2124;
+}
+.btn-block {
+  width: 100%;
 }
