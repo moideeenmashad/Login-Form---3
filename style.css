@@ -10,8 +10,6 @@ body {
   position: absolute;
   top: 5%;
   left: 10%;
-  height: 30px;
-  width: auto;
 }
 .card-custom-radius {
   border-radius: 12px !important;
