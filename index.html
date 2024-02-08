@@ -24,9 +24,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8">
+          <div id="invalid-msg"></div>
           <div class="card card-custom-radius">
             <div class="row">
               <div class="col-12 col-lg-6 d-none d-lg-block">
@@ -52,6 +54,7 @@
                       type="text"
                       class="form-control-custom"
                       placeholder="Enter your name"
+                      id="user-name"
                     />
                   </div>
                   <div class="col-12">
@@ -59,20 +62,23 @@
                       type="text"
                       class="form-control-custom"
                       placeholder="Email address"
+                      id="user-email"
                     />
                   </div>
                   <div class="col-12">
                     <input
-                      type="text"
+                      type="password"
                       class="form-control-custom"
                       placeholder="Create password"
+                      id="user-password"
                     />
                   </div>
                   <div class="col-12">
                     <input
-                      type="text"
+                      type="password"
                       class="form-control-custom"
                       placeholder="Confirm password"
+                      id="user-confirm-password"
                     />
                   </div>
                   <div class="col-12">
@@ -81,9 +87,9 @@
                         class="form-check-input focus-ring focus-ring-dark"
                         type="checkbox"
                         value=""
-                        id="defaultCheck"
+                        id="user-check-pp"
                       />
-                      <label class="form-check-label" for="defaultCheck">
+                      <label class="form-check-label" for="user-check-pp">
                         <p class="small">
                           I accept terms of use & privacy policy
                         </p>
@@ -93,6 +99,8 @@
                   <div class="col-12">
                     <button
                       class="btn-custom btn-primary-custom btn-block focus-ring focus-ring-dark"
+                      id="signup-btn"
+                      onclick="signUp();"
                     >
                       Sign up
                     </button>
@@ -100,7 +108,7 @@
                   <div class="col-12 text-center">
                     <a
                       class="small text-dark text-decoration-none"
-                      href="login.html"
+                      href="#"
                       >Already have an account?
                       <span class="text-primary">Sign in</span></a
                     >
