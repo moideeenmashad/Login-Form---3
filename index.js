@@ -13,7 +13,6 @@ const regexPatterns = {
 };
 
 const signUp = () => {
-  // Validate name using the defined regular expression
   if (!regexPatterns.name.test(userName.value.trim())) {
     invalidMsg.innerHTML = `<div class="alert alert-danger alert-dismissible text-center" role="alert">
          <div>Invalid Name</div>
@@ -21,8 +20,6 @@ const signUp = () => {
       </div>`;
     return;
   }
-
-  // Validate email using the defined regular expression
   if (!regexPatterns.email.test(userEmail.value.trim())) {
     invalidMsg.innerHTML = `<div class="alert alert-danger alert-dismissible text-center" role="alert">
          <div>Please enter a valid email address</div>
@@ -30,8 +27,6 @@ const signUp = () => {
       </div>`;
     return;
   }
-
-  // Validate password using the defined regular expression
   if (!regexPatterns.password.test(userPassword.value)) {
     invalidMsg.innerHTML = `<div class="alert alert-danger alert-dismissible text-center" role="alert">
          <div>Password must contain at least one number, one special character, and be 6-16 characters long</div>
@@ -39,8 +34,6 @@ const signUp = () => {
       </div>`;
     return;
   }
-
-  // Basic input validation for password fields
   if (
     userName.value.trim() === "" ||
     userEmail.value.trim() === "" ||
@@ -53,8 +46,6 @@ const signUp = () => {
  </div>`;
     return;
   }
-
-  // Check if passwords match
   if (userPassword.value !== userConfirmPassword.value) {
     invalidMsg.innerHTML = `<div class="alert alert-danger alert-dismissible text-center" role="alert">
     <div>Password do not match</div>
@@ -62,8 +53,6 @@ const signUp = () => {
  </div>`;
     return;
   }
-
-  // Check if privacy and policy checkbox is checked
   if (!userCheckPrivacyAndPolicy.checked) {
     invalidMsg.innerHTML = `<div class="alert alert-danger alert-dismissible text-center" role="alert">
     <div>Please accept the privacy and policy</div>
@@ -71,24 +60,7 @@ const signUp = () => {
  </div>`;
     return;
   }
-
-  // If all validations pass, you can proceed with the signup process
   console.log("User Name:", userName.value);
   console.log("User Email:", userEmail.value);
   console.log("User Password:", userPassword.value);
-
-  // Add your signup logic here, such as sending data to the server
-  // using AJAX or fetch.
-
-  // Redirect to the home page after successful signup
-  //   window.location.href = "home page.html";
 };
-
-// function togglePasswordVisibility(inputId) {
-//   const passwordInput = document.getElementById(inputId);
-
-// Toggle the 'type' attribute between 'password' and 'text'
-//   passwordInput.type = passwordInput.type === "password" ? "text" : "password";
-// }
-
-//   onclick="togglePasswordVisibility('user-confirm-password')"

@@ -2,9 +2,8 @@ body {
   display: grid;
   height: 120vh !important;
   align-items: center;
-  background-image: url(assets/bg-img.webp);
-  background-size: cover;
   font-family: "Poppins", sans-serif;
+  background-color: rgb(17 24 39);
 }
 .logo {
   position: absolute;
